@@ -17,7 +17,7 @@ class Header extends React.Component {
                 <div className="right-flex">
                     <div className="top-icon">
                         <a href="https://www.twitter.com/larry_coal" className="fa fa-twitter" title="twitter"> </a>
-                        <a href="https://www.linkedln/olayiwola-olanrewaju.com" className="fa fa-linkedin"> </a>
+                        <a href="https://www.linkedin.com/in/olanrewaju-olayiwola-a8055812a" className="fa fa-linkedin"> </a>
                         <a href="https://www.github.com/larrycoal" className="fa fa-github"> </a>
                     </div>
                 </div>

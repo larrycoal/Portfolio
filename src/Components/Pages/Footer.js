@@ -4,12 +4,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className="footer-flex">
-            <div className="footer-icons">
-
-            </div>
-            <div className="footer-right">
-
-            </div>
+           <p> Announcement: Olayiwola Olanrewaju is currently searching for Entry level Full-Stack Developer Job, and also available for Freelance Projects</p>
         </div>
     )
 }
