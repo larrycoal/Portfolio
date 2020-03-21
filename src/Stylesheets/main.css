@@ -1,0 +1,208 @@
+html,body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
+    min-height: 100%;
+    margin: 0px;
+    font-family: Montserat;
+}
+.main{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:2.5rem auto 2.5rem;
+}
+.main-content{
+    overflow:auto;
+}
+.header{
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+}
+.footer{
+    bottom:0;
+    position: absolute;
+    width: 100%;
+}
+.header-flex{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    width: 100%;   
+    
+}
+.right-flex{
+    justify-self: end;
+    padding-right: 40px;
+}
+.right-flex a{
+    padding-right: 20px;
+}
+.left-flex{
+    justify-self: end;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.0rem;
+}
+.top-div{
+    display: grid;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+}
+.top-div div{
+    align-self: center;
+}
+.top-div p{
+    color: whitesmoke;
+}
+.top-icon{
+    z-index: 100;
+}
+.top-icon a{
+  color: whitesmoke;
+  text-decoration: none;
+   font-size: 1.5rem;
+   padding: 5px;
+   border: 1px solid rgba(0,0,0,1);
+   background-color: rgba(0,0,0,0.6);
+   border-radius:50px;
+   margin: 5px;
+   transition: font-size 0.5s;
+}
+.top-icon a:hover{
+   font-size: 2.5rem;
+}
+.top-div h1{
+    color: whitesmoke;
+    margin: 0;
+}
+.animate{
+    transition: 2s;
+}
+.animate::after{
+    color:white;
+    content: "";
+    animation-name: skills;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    transition: linear;
+}
+@keyframes skills {
+    0%{content: "SOFTWARE DEVELOPER";opacity: 0;}
+    10%{opacity: 1;}
+    20%{opacity: 0;}
+    40%{content:"DESIGNER";opacity:1;}
+    50%{opacity:0}
+    60%{content:"NETWORK ADMINISTRATOR";opacity:1}
+    80%{opacity:0}
+    100%{content:"DATABASE MANAGER";opacity:1}
+    /*
+    75%{content: "NETWORK ADMINISTRATOR";opacity:0;transition: opacity,1s}
+    100%{content:"DATABASE MANAGER";opacity:1;transition: opacity,1s}*/
+}
+.about-div{
+    display:grid;
+    align-items: center;
+    color: white;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: rgb(32, 10, 10);
+    height: 100%;
+}
+.abt-text{
+    padding-left: 20px;
+}
+
+
+/*.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.main-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 2fr;
+}
+.main-left{
+box-shadow:inset 0 0 10px #000000;
+height: 100%;
+}
+.cv-btn{
+    margin: 10px 10px;
+}
+.content{
+    margin-top: 50%;
+    text-align: center;
+    color: blanchedalmond;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin:  15rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 6px -6px #777;
+    margin-bottom: 0px;
+}
+span::after{
+    content: "Software developer";
+    visibility: hidden;
+    animation-name: skills;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes skills {
+    0%{content: "A Software Developer";visibility: visible;}
+    50%{content:"A Cinematographer";visibility: visible;}
+    75%{content: "A Network Administrator";visibility: visible;}
+    100%{content:"A Database manager";visibility: visible;}
+}
+.bottom-right-content{
+    padding: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.projects,h1{
+    text-align: center;
+}
+.projects{
+    height: fit-content;
+    box-shadow: 0 10px 6px -6px #777;
+
+}
+.icon{
+    font-size: 50px;
+    justify-self: end;
+    padding: 5px;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination button {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+    justify-self: center;
+  }
+  .left-footer{
+    color: blanchedalmond;
+    text-align: center;
+}
+*/

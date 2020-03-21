@@ -1,0 +1,96 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    
+}
+.main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.main-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr 2fr;
+    
+}
+.main-left{
+background:#5f2c82;
+box-shadow:inset 0 0 10px #000000;
+height: 100%;
+}
+.cv-btn{
+    margin: 10px 10px;
+}
+.content{
+    margin-top: 50%;
+    text-align: center;
+    color: blanchedalmond;
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin:  15rem auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 6px -6px #777;
+    margin-bottom: 0px;
+}
+span::after{
+    content: "Software developer";
+    visibility: hidden;
+    animation-name: skills;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes skills {
+    0%{content: "A Software Developer";visibility: visible;}
+    50%{content:"A Cinematographer";visibility: visible;}
+    75%{content: "A Network Administrator";visibility: visible;}
+    100%{content:"A Database manager";visibility: visible;}
+}
+.bottom-right-content{
+    padding: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.projects,h1{
+    text-align: center;
+}
+.projects{
+    height: fit-content;
+    box-shadow: 0 10px 6px -6px #777;
+
+}
+.icon{
+    font-size: 50px;
+    justify-self: end;
+    padding: 5px;
+}
+.pagination {
+    display: inline-block;
+  }
+  
+  .pagination button {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+    justify-self: center;
+  }
+  .left-footer{
+    color: blanchedalmond;
+    text-align: center;
+}
