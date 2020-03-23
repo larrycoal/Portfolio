@@ -8,15 +8,24 @@ html,body{
     margin: 0px;
     font-family: Montserat;
 }
-@media (max-width:768px){
+@media(max-width:768px){
+    html,body{
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
+        min-height: 100%;
+        margin: 0px;
+        font-family: Montserat;
+    }
     .main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows:.5rem auto ;
         justify-content: center;
+        
     }
-}
-@media(max-width:768px){
     .top-div{
         height: 100vh;
         background-color: rgba(0,0,0,0.4);
@@ -24,15 +33,37 @@ html,body{
     }
     .top-div div{
         height: 100vh;
+        display: grid;
         text-align: center;
         margin: 20% auto;
         overflow: visible;
     }
-    .cv-btn{
+    .main-subject{
+        max-height: 20% !important;
+    }
+    .animate{
+        font-size: medium!important;
+    }
+    .main-subject p{
+       font-size: 1rem;
+    }
+    .main-subject h1{
+        font-size: medium;
+     }
+     .main-subject span{
+        font-size: 2rem;
+     }
+     .cv-btn{
+         display: none !important;
+     }
+    /*.cv-btn{
       height: auto !important;
       margin-top: 0!important;
-      padding: 0;
     }
+    .cv-btn a{
+        font-size: 20px;
+        width: max-content;
+    }*/
     .header-flex{
         display: grid!important;
         grid-template-columns: 5fr 3fr!important;
@@ -42,6 +73,10 @@ html,body{
     }
     .header-flex .left-flex{
         margin-right: 40%;
+        font-size: medium;
+    }
+    .header-flex .right-flex a{
+        font-size: medium;
     }
     .footer{
         display: none;
@@ -86,6 +121,7 @@ html,body{
 }
 .top-div{
     display: grid;
+    grid-template-rows: 1fr;
     height: 100%;
     text-align: center;
     background-color: rgba(0,0,0,0.4);
