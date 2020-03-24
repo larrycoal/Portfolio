@@ -201,6 +201,7 @@ html,body{
     color: white;
     grid-template-columns: 1.5fr 1fr;
     background-color: rgb(32, 10, 10);
+    column-gap: 30px;
     height: 100%;
 }
 .abt-text{
@@ -226,6 +227,58 @@ html,body{
     0%{transform: translateX(1400px);}
     100%{transform: translateX(-1000px);}
 }
+.abt-text img{
+    object-fit: scale-down;
+    width: 150px;
+    height: 150px;
+    border-radius: 70px;
+    margin-bottom: 30px;
+}
+.abt-header{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+.abt-header h1{
+    justify-content: start;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+.project-content{
+    background-image: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1584996242/Screenshot_2020-03-23_at_9.36.08_PM_ki2emb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px; 
+    display: grid;
+    align-content: flex-end;
+}
+.project-content div{
+    opacity: 0;
+}
+.project-content div:hover{
+    opacity: 1;
+    height: 200px;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    transition: opacity 1.5s;
+    padding-top: 100px;
+}
+.project-content div a{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    padding: 0px 10px;
+    color: whitesmoke;
+    border-radius: 50px;
+}
+
 
 
 

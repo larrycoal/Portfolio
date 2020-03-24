@@ -5,15 +5,19 @@ const aboutPage = () => {
     return (
         <div className="about-div">
             <div className="abt-text">
+                <div className="abt-header">
+                    <img src="https://res.cloudinary.com/dbdrtuscd/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1584964296/Screenshot_2020-03-23_at_12.51.02_PM_uqpkvb.png" alt="avatar" />
+                    <h1>ABOUT ME</h1>
+                </div>
                 <div className="approach">
-                <h3>Approach</h3>
-                <p>I like to work closely with design
-                    teams to transform their design right down
-                    to the last pixels. Daily you will find me using modern
-                    frontend technologies that bring creative design to life,just as
-                    designers intended them to be..
+                    <h3>Approach</h3>
+                    <p>I like to work closely with design
+                        teams to transform their design right down
+                        to the last pixels. Daily you will find me using modern
+                        frontend technologies that bring creative design to life,just as
+                        designers intended them to be..
                 </p>
-            </div>
+                </div>
                 <div className="technical">
                     <h3>Technical</h3>
                     <p>
@@ -31,7 +35,17 @@ const aboutPage = () => {
                 </div>
             </div>
             <div>
-                <div><h1>image</h1></div>
+                <h1>My Projects</h1>
+                <div className="projects">
+                    <div className="project-content">
+                        <div>
+                            A mailing list app <br />
+                            <a href="https://okadaban-mailing-list.herokuapp.com/">Visit</a>
+                        </div>
+                    </div>
+                    <div>hello</div>
+                    <div>hello</div>
+                </div>
             </div>
         </div>
     )
