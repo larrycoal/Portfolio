@@ -1,20 +1,10 @@
-html,body{
-    background-size: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
-    min-height: 100%;
-    margin: 0px;
-    font-family: Montserat;
-}
 @media(max-width:768px){
     html,body{
         background-size: 100%;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
+        background-image: url('../assets/fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
         min-height: 100%;
         margin: 0px;
         font-family: Montserat;
@@ -24,7 +14,12 @@ html,body{
         grid-template-columns: 1fr;
         grid-template-rows:.5rem auto ;
         justify-content: center;
-        
+        background-image: url('../assets/fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-position-x: center;
     }
     .top-div{
         height: 100vh;
@@ -78,10 +73,35 @@ html,body{
     .header-flex .right-flex a{
         font-size: medium;
     }
-    .footer{
+    .footer-flex p{
         display: none;
     }
+    .about-div{
+        display:grid;
+        align-items: center;
+        color: white;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 1fr!important;
+        background-color: rgb(32, 10, 10);
+        height: 100%;
+    }
+    .abt-text{
+        width: 100%;
+        padding-left: 20px;
+    }
 }
+/* desktop*/
+html,body{
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
+    min-height: 100%;
+    margin: 0px;
+    font-family: Montserat;
+}
+
 .main{
     min-height: 100vh;
     display: grid;
@@ -94,6 +114,7 @@ html,body{
 .header{
     background-color: rgba(0,0,0,0.4);
     z-index: 100;
+    box-shadow: 0px 0px 10px 3px  rgba(0,0,0,0.4);
 }
 .footer{
     bottom:0;
