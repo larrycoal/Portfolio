@@ -33,6 +33,10 @@ const aboutPage = () => {
                         "props to Udemy on that one". 2nd born of 4 children. Nice to meet yall!
                    </p>
                 </div>
+                <div className="hire">
+                <a href="mailto:larry_coal@outlook.com">hire me</a>
+
+                </div>
             </div>
             <Projects/>
         </div>

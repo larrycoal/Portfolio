@@ -308,6 +308,12 @@ a{
 details{
     font-size: smaller !important;
 }
+.hire{
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 30px;
+    width: fit-content;
+    padding: 10px;
+}
 
 
 
