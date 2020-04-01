@@ -12,7 +12,7 @@
     .main{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:.5rem auto ;
+        grid-template-rows:.5rem auto .5rem;
         justify-content: center;
         background-image: url('../assets/fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
         background-size: 100%;
@@ -22,7 +22,7 @@
         background-position-x: center;
     }
     .top-div{
-        height: 100vh;
+        height: 100%;
         background-color: rgba(0,0,0,0.4);
         
     }
@@ -61,17 +61,23 @@
     }*/
     .header-flex{
         display: grid!important;
-        grid-template-columns: 5fr 3fr!important;
-        width: 100%!important; 
-        
-        
+        grid-template-columns: 1fr 1fr!important;
+        width: 100%!important;    
     }
     .header-flex .left-flex{
-        margin-right: 40%;
+       align-self: center;
+       justify-self: left;
+       padding: 10px;
         font-size: medium;
     }
     .header-flex .right-flex a{
-        font-size: medium;
+        font-size: small;
+    }
+    .header-flex .right-flex a:hover{
+        font-size: small;
+    }
+    .footer{
+        background-color: black;
     }
     .footer-flex p{
         display: none;
@@ -190,7 +196,7 @@ html,body{
 }
 .top-div span{
     font-size: 3.5rem;
-    font-family: cursive;
+    font-family: Lobster;
 }
 .top-div p{
     font-size: 1.5rem;
@@ -261,44 +267,50 @@ html,body{
 }
 .abt-header h1{
     justify-content: start;
+    font-family: Lobster;
 }
-.projects{
+.projects-main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows:2fr 8fr;
     column-gap: 20px;
-    row-gap: 20px;
-    
+    height: 100%;
+    padding:10%;
 }
-.project-content{
-    background-image: url("https://res.cloudinary.com/dbdrtuscd/image/upload/v1584996242/Screenshot_2020-03-23_at_9.36.08_PM_ki2emb.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 200px; 
+summary{
+  outline: none;
+  
+  
+}
+.projects-head{
+   align-self: center;
+}
+.projects-body{
+    height: fit-content;
     display: grid;
-    align-content: flex-end;
+    grid-template-rows: auto;
+    padding-top: 20%;
+    row-gap: 20px;
 }
-.project-content div{
-    opacity: 0;
+.projects-body div{
+    height: 100%;
+    width: fit-content;
+    font-size: larger;
 }
-.project-content div:hover{
-    opacity: 1;
-    height: 200px;
-    color: whitesmoke;
-    background-color: rgba(0,0,0,0.4);
-    padding: 10px 10px;
-    font-size: 1.5rem;
-    transition: opacity 1.5s;
-    padding-top: 100px;
-}
-.project-content div a{
+a:hover{
     text-decoration: none;
-    background-color: cornflowerblue;
-    padding: 0px 10px;
     color: whitesmoke;
-    border-radius: 50px;
+    font-size: larger;
 }
+a{
+    transition: font-size 1s;
+}
+details{
+    font-size: smaller !important;
+}
+
+
+
 
 
 

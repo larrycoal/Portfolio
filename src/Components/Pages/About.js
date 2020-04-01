@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Projects from './Projects'
 
 const aboutPage = () => {
     return (
@@ -34,19 +34,7 @@ const aboutPage = () => {
                    </p>
                 </div>
             </div>
-            <div>
-                <h1>My Projects</h1>
-                <div className="projects">
-                    <div className="project-content">
-                        <div>
-                            A mailing list app <br />
-                            <a href="https://okadaban-mailing-list.herokuapp.com/">Visit</a>
-                        </div>
-                    </div>
-                    <div>hello</div>
-                    <div>hello</div>
-                </div>
-            </div>
+            <Projects/>
         </div>
     )
 }
