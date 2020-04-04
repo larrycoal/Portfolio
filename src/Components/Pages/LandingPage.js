@@ -4,7 +4,7 @@ import React from 'react'
 const landingPage = () => {
     return (
         <div className="top-div">
-            <div>
+            <div className="landing-content">
             <div className="main-subject">
             <p>Hello,I am Lanre</p>
             <h1>I AM A<span className="animate"> </span></h1>
