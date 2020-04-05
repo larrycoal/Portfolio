@@ -9,16 +9,20 @@ class App extends React.Component {
     render() {
         return (
             <div className="main">
-                <nav className="header">
-                    <Header />
-                </nav>
+                <div>
+                    <nav className="header">
+                        <Header />
+                    </nav>
+                </div>
                 <div className="main-content">
                     <LandingPage />
-                    <AboutPage/>
+                    <AboutPage />
                 </div>
-                <footer className="footer">
-                    <Footer />
-                </footer>
+                <div>
+                    <footer className="footer">
+                        <Footer />
+                    </footer>
+                </div>
             </div>
         )
     }

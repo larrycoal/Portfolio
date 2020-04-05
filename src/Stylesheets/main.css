@@ -19,7 +19,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        background-position-x: center;
+        background-position-y: top;
     }
     .top-div{
         height: 100%;
@@ -51,14 +51,9 @@
      .cv-btn{
          display: none !important;
      }
-    /*.cv-btn{
-      height: auto !important;
-      margin-top: 0!important;
-    }
-    .cv-btn a{
-        font-size: 20px;
-        width: max-content;
-    }*/
+  .about-div{
+      min-height: 100% !important;
+  }
     .header-flex{
         display: grid!important;
         grid-template-columns: 1fr 1fr!important;
@@ -102,23 +97,20 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../assets/arif-riyanto-G1N9kDHqBrQ-unsplash.jpg');
+    background-image: url('../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg');
     min-height: 100%;
     margin: 0px;
     font-family: Montserat;
 }
+
 .main{
-    min-height: 100%;
-   
-}
-/*.main{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:2.5rem auto 1.5rem;
-}*/
+    grid-template-rows:auto 1fr auto ;
+}
 .main-content{
-    overflow:auto;
+    min-height: 100vh;
+    background-color: rgba(48, 6, 6, 0.8);
 }
 
 nav{
@@ -126,6 +118,8 @@ nav{
     z-index: 100;
     box-shadow: 0px 0px 10px 3px  rgba(0,0,0,0.4);
     height: 50px;
+    width: 100%;
+    position: fixed;
 }
 .footer{
     bottom:0;
