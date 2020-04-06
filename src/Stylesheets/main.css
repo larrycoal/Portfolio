@@ -14,7 +14,7 @@
         grid-template-columns: 1fr;
         grid-template-rows:.5rem auto .5rem;
         justify-content: center;
-        background-image: url('../assets/fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
+        background-image: url('../assets/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg');
         background-size: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -98,6 +98,7 @@ html,body{
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+    background-color: black;
     min-height: 100%;
     margin: 0px;
     font-family: Montserat;
@@ -187,6 +188,7 @@ nav{
 .animate{
     transition: 2s;
 }
+
 .animate::after{
     color:white;
     content: "";
@@ -291,25 +293,60 @@ summary{
 .projects-body{
     height: fit-content;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-columns:1fr 1fr;
     padding-top: 20%;
-    row-gap: 20px;
+    column-gap: 20px;
 }
-.projects-body div{
+.parent-project{
+    height:150px;
+    width: 200px;
+}
+.project-1{
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-image: url("../assets/Screenshot\ 2020-03-23\ at\ 9.36.08\ PM.png");
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+.project-1:before{
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgba(48, 6, 6, 0.8);
+}
+.parent-project:hover .project-1:before,
+.parent-project:focus .project-1:before{
+    display: block;
+}
+.parent-project:hover .project-1,
+.parent-project:focus .project-1:before{
+    transform: scale(1.2);    
+}
+.project-1 span{
+    margin: auto 0;
+    font-size: 40px;
+    position: absolute;
+    display: none;
+}
+.parent-project:hover span,
+.parent-project:focus span{
+    display: block;
+    color: white;
+}
+/*.projects-body div{
     height: 100%;
     width: fit-content;
     font-size: larger;
-}
-a:hover{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: larger;
-}
+}*/
 a{
-    transition: font-size 1s;
-}
-details{
-    font-size: smaller !important;
+    text-decoration: none;
+    columns: white;
 }
 .hire{
     border: 2px solid rgba(255,255,255,0.6);
