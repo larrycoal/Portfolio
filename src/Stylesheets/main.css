@@ -1,59 +1,4 @@
 @media(max-width:768px){
-    html,body{
-        background-size: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-image: url('../assets/fernando-hernandez-JdoofvUDUwc-unsplash.jpg');
-        min-height: 100%;
-        margin: 0px;
-        font-family: Montserat;
-    }
-    .main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows:.5rem auto .5rem;
-        justify-content: center;
-        background-image: url('../assets/fabian-grohs-dC6Pb2JdAqs-unsplash.jpg');
-        background-size: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-        background-position-y: top;
-    }
-    .top-div{
-        height: 100%;
-        background-color: rgba(0,0,0,0.4);
-        
-    }
-    .top-div div{
-        height: 100vh;
-        display: grid;
-        text-align: center;
-        margin: 20% auto;
-        overflow: visible;
-    }
-    .main-subject{
-        max-height: 20% !important;
-    }
-    .animate{
-        font-size: medium!important;
-    }
-    .main-subject p{
-       font-size: 1rem;
-    }
-    .main-subject h1{
-        font-size: medium;
-     }
-     .main-subject span{
-        font-size: 2rem;
-     }
-     .cv-btn{
-         display: none !important;
-     }
-  .about-div{
-      min-height: 100% !important;
-  }
     .header-flex{
         display: grid!important;
         grid-template-columns: 1fr 1fr!important;
@@ -94,10 +39,6 @@
 /* desktop*/
 html,body{
     background-size: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg');
     background-color: black;
     min-height: 100%;
     margin: 0px;
@@ -147,19 +88,31 @@ nav{
     font-size: 2.0rem;
 }
 .top-div{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg');
     display: grid;
     grid-template-rows: 1fr;
     min-height: 100vh;
-    text-align: center;
-    background-color: rgba(0,0,0,0.4);
-    overflow: visible;
+    position: fixed;
+    min-width: 100%;
+    overflow: scroll;
 }
 .landing-content{
+    background-color: rgba(48, 6, 6, 0.8);
     align-self: center;
-    height: 50%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     column-gap: 20px;
+}
+.main-subject{
+    position: relative;
+    top: 30%;
+    margin-left: 7%;
+    padding-left: 3%;
+    border-left: 5px solid yellow;
 }
 .top-div p{
     color: whitesmoke;
@@ -190,7 +143,7 @@ nav{
 }
 
 .animate::after{
-    color:white;
+    color:yellow;
     content: "";
     animation-name: skills;
     animation-duration: 30s;
@@ -207,11 +160,14 @@ nav{
     font-size: 1.5rem;
 }
 .cv-btn{
-    border: 1px solid yellowgreen;
-   width: 20%;
-   margin: 0 auto;
-   border-radius: 20px;
+    position: relative;
    font-size: 1.5rem;
+   top: 33%;
+   margin-left: 10%;
+   border: 0px solid rgba(48, 6, 6, 0.8);
+   width: fit-content;
+   padding: 5px 10px;
+   box-shadow: 0px 0px 20px 10px  rgba(0,0,0,0.4);
 }
 .cv-btn a{
     text-decoration: none;
@@ -235,9 +191,15 @@ nav{
     background-color: rgb(32, 10, 10);
     column-gap: 30px;
     min-height: 100vh;
+    position: relative;
+    top: 100vh;
 }
 .abt-text{
     padding-left: 20px;
+}
+.footer{
+    position: relative;
+    top: 100vh;
 }
 .footer-flex{
     background-color: black;
