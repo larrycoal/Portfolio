@@ -6,7 +6,17 @@ import AboutPage from './Pages/About'
 import '../Stylesheets/main.css'
 
 class App extends React.Component {
-    render() {
+    state = { loaded: false }
+    componentDidMount() {
+        window.onload = () => {
+            this.setState({ loaded: true })
+        }
+    }
+
+    renderPage() {
+        if (!this.state.loaded) {
+            return <div>loading</div>
+        }
         return (
             <div className="main">
                 <div>
@@ -25,6 +35,12 @@ class App extends React.Component {
                 </div>
             </div>
         )
+    }
+    render() {
+        return (
+        <div>{this.renderPage()}</div>
+        )
+           
     }
 }
 
