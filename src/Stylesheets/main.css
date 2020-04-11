@@ -33,14 +33,39 @@
         display:grid;
         align-items: center;
         color: white;
-        grid-template-rows: 1.5fr 1fr;
+        padding-top: 10%;
+        grid-template-rows: .5fr 3fr;
         grid-template-columns: 1fr!important;
         background-color: rgb(32, 10, 10);
         height: 100%;
     }
+    .abt-navigation{
+        flex-direction: row !important;
+        font-size: x-small;
+        border-right: 0px !important;
+        border-bottom: 5px solid yellow;
+    }
     .abt-text{
         width: 100%;
-        padding-left: 20px;
+        padding-left: 20px !important;
+        font-size: smaller;
+    }
+    .abt-header{
+        font-size: smaller;
+    }
+    .abt-header h1{
+        padding-left: 15px;
+        width: 200px;
+        font-size:30px
+    }
+    .projects-main{
+        padding: 10px !important;
+        grid-template-columns: 1fr;
+    }
+    .projects-body{
+        font-size: smaller;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto;
     }
 }
 /* desktop*/
@@ -72,7 +97,6 @@ nav{
 }
 .footer{
     bottom:0;
-    
     width: 100%;
 }
 .header-flex{
@@ -121,6 +145,10 @@ nav{
     padding-left: 3%;
     border-left: 5px solid yellow;
 }
+.main-subject p{
+    color: yellow !important;
+    font-family: Lobster;
+}
 .top-div p{
     color: whitesmoke;
 }
@@ -147,17 +175,42 @@ nav{
 }
 .animate{
     transition: 2s;
+    -webkit-transition: 2s;
 }
 
 .animate::after{
     color:yellow;
     content: "";
-    animation-name: skills;
+    animation-name: skills ;
     animation-duration: 30s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     transition: linear;
+    -webkit-transition: linear;
+    -webkit-animation-name: skills;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes skills {
+    0%{content: "SOFTWARE DEVELOPER";opacity: 0;}
+    10%{opacity: 1;}
+    20%{opacity: 0;}
+    40%{content:"DESIGNER";opacity:1;}
+    50%{opacity:0}
+    60%{content:"NETWORK ADMINISTRATOR";opacity:1}
+    80%{opacity:0}
+    100%{content:"DATABASE MANAGER";opacity:1}
+}
+@-webkit-keyframes skills{
+    0%{content: "SOFTWARE DEVELOPER";opacity: 0;}
+    10%{opacity: 1;}
+    20%{opacity: 0;}
+    40%{content:"DESIGNER";opacity:1;}
+    50%{opacity:0}
+    60%{content:"NETWORK ADMINISTRATOR";opacity:1}
+    80%{opacity:0}
+    100%{content:"DATABASE MANAGER";opacity:1}
 }
 .top-div span{
     font-size: 3.5rem;
@@ -180,29 +233,35 @@ nav{
     text-decoration: none;
     color: whitesmoke;
 }
-@keyframes skills {
-    0%{content: "SOFTWARE DEVELOPER";opacity: 0;}
-    10%{opacity: 1;}
-    20%{opacity: 0;}
-    40%{content:"DESIGNER";opacity:1;}
-    50%{opacity:0}
-    60%{content:"NETWORK ADMINISTRATOR";opacity:1}
-    80%{opacity:0}
-    100%{content:"DATABASE MANAGER";opacity:1}
-}
+
 .about-div{
+    z-index: 2;
     display:grid;
     align-items: center;
     color: white;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: .5fr 2fr;
     background-color: rgb(32, 10, 10);
     column-gap: 30px;
     min-height: 100vh;
     position: relative;
     top: 100vh;
 }
+.abt-navigation{
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid yellow;
+}
+.abt-navigation div{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Lobster;
+    padding: 10px;
+    cursor: pointer;
+    
+}
 .abt-text{
-    padding-left: 20px;
+    padding-left: 100px ;
+    width: 80%;
 }
 .footer{
     position: relative;
@@ -259,60 +318,16 @@ summary{
 .projects-head{
    align-self: center;
 }
+.projects-head h1{
+    font-family: Lobster;
+}
 .projects-body{
     height: fit-content;
     display: grid;
     grid-template-columns:1fr 1fr;
-    padding-top: 20%;
     column-gap: 20px;
 }
-.parent-project{
-    height:150px;
-    width: 200px;
-}
-.project-1{
-    width: 100%;
-    height: 100%;
-    background-color: black; /* fallback color */
-    background-image: url("../assets/Screenshot\ 2020-03-23\ at\ 9.36.08\ PM.png");
-    background-position: center;
-    background-size: cover;
-    transition: all .5s;
-}
-.project-1:before{
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color:  rgba(48, 6, 6, 0.8);
-}
-.parent-project:hover .project-1:before,
-.parent-project:focus .project-1:before{
-    display: block;
-}
-.parent-project:hover .project-1,
-.parent-project:focus .project-1:before{
-    transform: scale(1.2);    
-}
-.project-1 span{
-    margin: auto 0;
-    font-size: 40px;
-    position: absolute;
-    display: none;
-}
-.parent-project:hover span,
-.parent-project:focus span{
-    display: block;
-    color: white;
-}
-/*.projects-body div{
-    height: 100%;
-    width: fit-content;
-    font-size: larger;
-}*/
+
 a{
     text-decoration: none;
     columns: white;

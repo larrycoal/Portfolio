@@ -6,7 +6,7 @@ const landingPage = () => {
         <div className="top-div">
             <div className="landing-content">
             <div className="main-subject animated slideInLeft slow">
-            <p>Hello,</p>
+            <p>Hello!</p>
             <h1>I AM A<span className="animate"> </span></h1>
             </div>
             <div className="cv-btn animated fadeInDown delay-2s">
