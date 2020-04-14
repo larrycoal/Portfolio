@@ -20,7 +20,7 @@ const Projects = () => {
                 <div>
                 <h1>#Quick-Test</h1>
                     <p>A platform for an examiner to create test,providing question and answers to the app and get a link for test takers.
-                        This application isnt delpoyed yet but a link to my repository can be found below.Built with React and mongodB
+                        This application isnt deployed yet but a link to my repository can be found below.Built with React and mongodB
                     </p>
                     <div style={{fontSize:"larger"}}>
                    Visit:  <a href="https://github.com/larrycoal/Quicktest" target="parent" className="fa fa-external-link" style={{ textDecoration: "none", color: "white" }}> </a>
@@ -31,7 +31,7 @@ const Projects = () => {
                     <p>A Calculator built with React
                     </p>
                     <div style={{fontSize:"larger"}}>
-                   Visit:  <a href="https://claculator-lanre.herokuapp.com/" target="parent" className="fa fa-external-link" style={{ textDecoration: "none", color: "white" }}> </a>
+                   Visit:  <a href="https://calculator-lanre.herokuapp.com/" target="parent" className="fa fa-external-link" style={{ textDecoration: "none", color: "white" }}> </a>
                    </div>
                 </div>
                 <div>

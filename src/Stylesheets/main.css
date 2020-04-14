@@ -240,25 +240,25 @@ nav{
     display:grid;
     align-items: center;
     color: white;
-    grid-template-columns: .5fr 2fr;
+    grid-template-columns: 1fr auto 1fr;
     background-color: rgb(32, 10, 10);
     column-gap: 30px;
     min-height: 100vh;
     position: relative;
     top: 100vh;
 }
-.abt-navigation{
-    display: flex;
-    flex-direction: column;
-    border-right: 5px solid yellow;
-}
-.abt-navigation div{
-    font-size: 2em;
-    font-weight: bold;
-    font-family: Lobster;
-    padding: 10px;
+.arrow{
+    font-size: 5rem;
+    color: yellow;
+    border: none;
+    background-color: transparent;
+    height: fit-content;
     cursor: pointer;
-    
+    transition: all 1s;
+}
+.arrow:hover{
+    color: white;
+
 }
 .abt-text{
     padding-left: 100px ;

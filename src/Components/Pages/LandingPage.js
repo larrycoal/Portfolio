@@ -10,7 +10,7 @@ const landingPage = () => {
             <h1>I AM A<span className="animate"> </span></h1>
             </div>
             <div className="cv-btn animated fadeInDown delay-2s">
-                <a href="https://res.cloudinary.com/dbdrtuscd/image/upload/v1584465373/Olayiwola_cv_txtmin.pdf">View cv</a>
+                <a href="https://res.cloudinary.com/dbdrtuscd/raw/upload/v1586731256/Olayiwola-Olanrewaju_pfhuna.docx">View cv</a>
             </div>
             </div>
             
